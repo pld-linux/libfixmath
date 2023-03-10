@@ -15,6 +15,9 @@ BuildRequires:	gcc >= 6:4.7
 BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# only static library
+%define		_enable_debug_packages	0
+
 %description
 Libfixmath implements Q16.16 format fixed point operations in C.
 
